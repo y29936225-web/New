@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Dragon vs Tiger Predictor</title>
+  <style>
+    body { font-family: Arial; text-align: center; padding: 30px; }
+    input { padding: 10px; width: 80px; margin: 10px; }
+    button { padding: 10px 20px; margin: 20px; }
+    #result { font-size: 24px; margin-top: 20px; }
+  </style>
+</head>
+<body>
+  <h2>Dragon vs Tiger Predictor</h2>
+  <p>Enter card numbers (1 to 13)</p>
+  <input type="number" id="dragon" placeholder="Dragon" min="1" max="13">
+  <input type="number" id="tiger" placeholder="Tiger" min="1" max="13">
+  <br>
+  <button onclick="predict()">Predict</button>
+  <div id="result"></div>
+  <audio id="sound" src="sound.mp3" preload="auto"></audio>
+
+  <script src="script.js"></script>
+</body>
+</html>
